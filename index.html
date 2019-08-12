@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            *{
+                box-sizing: border-box !important;
+            }
+            ul{
+                display: none;
+                list-style-type: none;
+                text-align: right;
+            }
+            li{
+                display: inline-block;
+                line-height: 50px;
+                padding: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- header menu -->
+        <div class="container p-0" style="position: sticky!important;top: 0;left:0;z-index:1000;">
+            <div class="d-flex justify-content-between bg-dark text-light" style="min-height: 50px;border-bottom: 2px solid white;">
+                <!-- logo marca -->
+                <div style="line-height: 50px" class="pl-2">
+                    Logo
+                </div>
+                <!-- menu site md,lg -->
+                <ul class="d-md-block m-0 p-0">
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Parcerias</li>
+                    <li>Noticías</li>
+                    <li>Sobre</li>
+                </ul>
+                <!-- botao mobile menu < sm -->
+                <div class="d-md-none pr-2" style="line-height: 50px" onclick="abrirMenuMobile()">
+                    Menu
+                </div>
+            </div>
+            <!-- menu mobile responsivo -->
+            <div class="bg-dark text-light d-md-none" id="menu_responsivo" style="display: none;">
+                <ul class="d-block pl-0 m-0">
+                    <li class="d-block text-center">Home</li>
+                    <li class="d-block text-center">Produtos</li>
+                    <li class="d-block text-center">Parcerias</li>
+                    <li class="d-block text-center">Noticías</li>
+                    <li class="d-block text-center">Sobre</li>
+                </ul>
+            </div>
+            <script>
+                var fechado = 1;
+                function abrirMenuMobile(){
+                    if(fechado == 1){
+                        document.getElementById('menu_responsivo').style.display = "block";    
+                        fechado = 0;
+                    }else{
+                        document.getElementById('menu_responsivo').style.display = "none";    
+                        fechado = 1;
+                    }   
+                }
+            </script>
+        </div><!-- end header menu -->
+        
+        <!-- main -->
+        <div class="container p-0">
+            <main>
+                <div class="row m-0 p-0">
+                    <div class="col-12 col-md-9 p-0" style="background-color: red;min-height: 350px;">
+                        awdawdaw
+                    </div>
+                    <div class="col-12 col-md-3 p-0" style="background-color: yellow;min-height: 350px;">
+                        dawdawd  
+                    </div>
+                </div>
+            </main>
+        </div> <!-- end main -->
+
+        <!-- rodape site -->
+        <div class="container p-0">
+            <footer>
+                <div class="row m-0 p-0">
+                    <div class="col-12 col-md-6 p-0">
+                        <div class="text-center">
+                            teste 1 
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 p-0">
+                        <div class="text-center">
+                            teste 2
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
